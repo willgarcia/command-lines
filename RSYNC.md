@@ -1,7 +1,7 @@
 See [Rsync official documentation](http://rsync.samba.org/) for details.
 
-rsync - rsync with symlinks
----------------------------
+rsync - rsync over ssh with symlinks
+------------------------------------
 
 ```shell
 rsync -avz -e ssh /my/path/with/symlinks user@host:
