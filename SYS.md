@@ -58,3 +58,10 @@ sys - re initialize terminal
 ```shell
 reset
 ```
+
+sys - count lines
+-----------------
+
+```shell
+cat myfile | wc -l
+```
