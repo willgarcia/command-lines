@@ -43,3 +43,11 @@ sys - who is online
 ```shell
 w
 ```
+
+sys - find in-use binary path
+-----------------------------
+
+```shell
+which myapp
+whereis myapp
+```
