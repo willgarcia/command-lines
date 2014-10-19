@@ -65,3 +65,29 @@ WHERE
 ;
 ```
 
+postgres - create user
+----------------------
+
+```bash
+su postgres -c "createdb --encoding UTF8 --template template0 --owner \"$DB_USER\" \"$DB_NAME\""
+```
+
+postgres - migrate schema
+-------------------------
+
+```bash
+# source database
+su postgres -c "psql -U postgres -c \"ALTER SCHEMA $FROM_DB_SCHEMA RENAME TO $TO_DB_SCHEMA;\" $FROM_DB_NAME"
+su postgres -c "pg_dump $FROM_DB_NAME --inserts --schema $TO_DB_SCHEMA >> $DB_OUTFILE"
+
+# target database
+su postgres -c "psql -U postgres -c \"CREATE SCHEMA \"$TO_DB_SCHEMA\" AUTHORIZATION \"$TO_DB_SCHEMA_OWNER\";\" $TO_DB_NAME" >&/dev/null
+su postgres -c "psql -U postgres -f $DB_OUTFILE $TO_DB_NAME" >&/dev/null
+
+# target database's ownerships (schemas objects: tables, etc)
+su postgres -c "psql -U postgres -c \"ALTER SCHEMA $TO_DB_SCHEMA OWNER TO $TO_DB_SCHEMA_OWNER;\" $TO_DB_NAME"
+su postgres -c "psql -U postgres -c \"REASSIGN OWNED BY $FROM_DB_SCHEMA_OWNER TO $TO_DB_SCHEMA_OWNER;\" $TO_DB_NAME"
+
+# migration
+su postgres -c "psql -U postgres -c \"ALTER SCHEMA $TO_DB_SCHEMA RENAME TO $FROM_DB_SCHEMA;\" $FROM_DB_NAME"
+```
