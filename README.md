@@ -10,7 +10,6 @@ command-lines
 * [INITD.md](INITD.md)
 * [MYSQL.md](MYSQL.md)
 * [OSX.md](OSX.md)
-* [PHP.md](PHP.md)
 * [POSTGRES.md](POSTGRES.md)
 * [README.md](README.md)
 * [REGEXP.md](REGEXP.md)
