@@ -40,3 +40,10 @@ shortcuts - search history
 ```shell
 ctrl-r
 ```
+
+shortcuts - clear console
+-------------------------
+
+```shell
+ctrl-l
+```
