@@ -51,3 +51,10 @@ sys - find in-use binary path
 which myapp
 whereis myapp
 ```
+
+sys - re initialize terminal
+----------------------------
+
+```shell
+reset
+```
