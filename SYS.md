@@ -36,3 +36,10 @@ sys - add a user
 useradd -m -s /bin/bash myuser
 passwd myuser
 ```
+
+sys - who is online
+-------------------
+
+```shell
+w
+```
