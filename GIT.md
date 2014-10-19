@@ -93,3 +93,11 @@ git - list unmerged branches
 ```shell
 git branch -a --merged master
 ```
+
+git - branch exists
+-------------------
+
+```shell
+$BRANCH=mybranch
+git --git-dir="$WORKSPACE/.git" branch -r | grep -P "^\s*(?:origin/)?$BRANCH" > /dev/null
+```
