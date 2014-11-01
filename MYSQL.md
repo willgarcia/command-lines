@@ -21,3 +21,10 @@ mysql - database import
 ```bash
 gunzip < database.sql.gz | mysql -u user -p database
 ```
+
+mysql - gzipped mysqldump over ssh
+----------------------------------
+
+```bash
+mysqldump -u user -p database | gzip -c | ssh user@host 'cat > /path/to/dump.sql.gz'
+```

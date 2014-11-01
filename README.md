@@ -15,7 +15,7 @@ command-lines
 * [REGEXP](REGEXP.md)
 * [RPM](RPM.md)
 * [RSYNC](RSYNC.md)
-* [SCREEN-TMUX.m](SCREEN-TMUX.md)
+* [SCREEN-TMUX](SCREEN-TMUX.md)
 * [SED](SED.md)
 * [SHORTCUTS](SHORTCUTS.md)
 * [SSH](SSH.md)
