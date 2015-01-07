@@ -51,6 +51,13 @@ git filter-branch --prune-empty --subdirectory-filter $SRC_DIR master
 git push $OUTPUT_REPO master
 ```
 
+git - is a tag
+----------------
+
+```shell
+git describe --exact-match --tags $(git log -n1 --pretty='%h')
+```
+
 git - show the last git
 -----------------------
 
