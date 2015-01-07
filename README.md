@@ -5,13 +5,13 @@ command-lines
 -------------
 
 * [BASH](BASH.md)
+* [DOCKER/FIG](DOCKER-FIG.md)
 * [FIND](FIND.md)
 * [GIT](GIT.md)
 * [INITD](INITD.md)
 * [MYSQL](MYSQL.md)
 * [OSX](OSX.md)
 * [POSTGRES](POSTGRES.md)
-* [README](README.md)
 * [REGEXP](REGEXP.md)
 * [RPM](RPM.md)
 * [RSYNC](RSYNC.md)
