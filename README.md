@@ -20,6 +20,7 @@ command-lines
 * [SHORTCUTS](SHORTCUTS.md)
 * [SSH](SSH.md)
 * [SYS](SYS.md)
+* [TAIL-LESS-WATCH](TAIL-LESS-WATCH.md)
 * [TAR](TAR.md)
 * [WGET](WGET.md)
 * [YUM](YUM.md)
