@@ -22,8 +22,8 @@ docker - list containers
 docker ps
 ```
 
-docker - list containers
-------------------------
+docker - logs
+-------------
 
 ```shell
 docker logs [OPTIONS] CONTAINER
