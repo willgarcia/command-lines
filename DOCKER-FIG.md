@@ -22,6 +22,13 @@ docker - list containers
 docker ps
 ```
 
+docker - list containers
+------------------------
+
+```shell
+docker logs [OPTIONS] CONTAINER
+```
+
 docker - rm container
 ---------------------
 
