@@ -95,6 +95,8 @@ su postgres -c "psql -U postgres -c \"ALTER SCHEMA $TO_DB_SCHEMA RENAME TO $FROM
 
 postgres - schema size
 ----------------------
+
+```sql
 SELECT schema_name, 
     pg_size_pretty(sum(table_size)::bigint) as "disk space",
     (sum(table_size) / pg_database_size(current_database())) * 100
@@ -108,3 +110,4 @@ FROM (
 ) t
 GROUP BY schema_name
 ORDER BY schema_name
+```
