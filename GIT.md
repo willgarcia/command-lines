@@ -1,5 +1,12 @@
 See [Git official documentation](http://git-scm.com/documentation) for details.
 
+git - force https
+-----------------
+
+```shell
+git config --global url."https://".insteadOf git://
+```
+
 git - clone single branch
 -------------------------
 
