@@ -1,4 +1,5 @@
 See [Max RPM documentation](http://www.rpm.org/max-rpm-snapshot/) for details.
+Section: [Max RPM documentation - Chapter 5. Getting Information About Packages](http://www.rpm.org/max-rpm/ch-rpm-query.html).
 
 rpm - list files inside an rpm
 ------------------------------
