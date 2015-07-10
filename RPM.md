@@ -25,3 +25,10 @@ rpm - list dependencies (installed)
 ```shell
 $ rpm  rpm -qR <package.rpm>
 ```
+
+rpm - which package does a file belongs to
+------------------------------------------
+
+```shell
+$ yum whatprovides '/etc/environment'
+```
