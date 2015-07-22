@@ -32,3 +32,10 @@ rpm - which package does a file belongs to
 ```shell
 $ yum whatprovides '/etc/environment'
 ```
+
+rpm - show scripts
+------------------
+
+```shell
+rpm -ql --scripts my.rpm
+````
