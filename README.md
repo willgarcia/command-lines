@@ -24,6 +24,7 @@ command-lines
 * [SYS](SYS.md)
 * [TAIL-WATCH](TAIL-WATCH.md)
 * [TAR](TAR.md)
+* [TRAP](TRAP.md)
 * [VIM](VIM.md)
 * [WGET](WGET.md)
 * [YOUTUBE](YOUTUBE.md)
