@@ -25,3 +25,10 @@ less - switch to default editor
 ```
 v – using the configured editor edit the current file.
 ```
+
+less - read the end of a file
+-----------------------------
+
+```shell
+less +F /my/file
+```
