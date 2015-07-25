@@ -66,9 +66,3 @@ sys - count lines
 cat myfile | wc -l
 ```
 
-sys - watch a directory
------------------------
-
-```shell
-watch --interval 5 ls /my/dir
-```
