@@ -1,6 +1,17 @@
-See [BASH official documentation](http://www.gnu.org/software/bash/) for details.
-See also [BASH options](http://www.tldp.org/LDP/abs/html/options.html).
+* See [BASH official documentation](http://www.gnu.org/software/bash/) for details.
+* See also [BASH options](http://www.tldp.org/LDP/abs/html/options.html).
+* See also [Logger in BASH](http://krypted.com/mac-os-x/logger-in-bash-2/).
+* See also [BASH Google Guidelines](https://google-styleguide.googlecode.com/svn/trunk/shell.xml)
 
+bash - current dir/file
+-----------------------
+
+```
+WORK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$(dirname "${WORK_DIR}")" && pwd)"
+WORK_SCRIPT="${WORK_DIR}/$(basename "${BASH_SOURCE[0]}")"
+BASE_SCRIPT="$(basename ${WORK_SCRIPT} .sh)"
+```
 
 bash - array explode [delimiters: ",", "\n")
 --------------------------------------------
@@ -36,6 +47,7 @@ bash - check if all variables are initialised
 
 ```shell
 set -u 
+set -o nounset
 ```
 
 bash - exit on fail
@@ -51,7 +63,6 @@ bash - syntax checks
 
 ```shell
 set -n 
-set -o nounset
 ```
 
 bash - exit on pipefail
@@ -61,23 +72,18 @@ bash - exit on pipefail
 set -o pipefail
 ```
 
-trap signals
-------------
+bash - allow a command to fail
+------------------------------
 
 ```
-trap command signal [INT|TERM|EXIT|...]
+<CMD> || true
+<CMD> || :
 ```
 
-```
-if [ ! -e $lockfile ]; then
-   trap "rm -f $lockfile; exit" INT TERM EXIT
-   touch $lockfile
-   critical-section
-   rm $lockfile
-   trap - INT TERM EXIT
-else
-   echo "critical-section is already running"
-fi
-```
+bash - debug mode
+-----------------
 
-trap command signal [signal ...]
+```
+set -x 
+set -o xtrace 
+```
