@@ -12,6 +12,14 @@ rpm -ql packageName
 rpm -qpl file.rpm
 ```
 
+rpm - dependencies treeview (installed)
+---------------------------------------
+
+```
+yum install rpmreaper
+rpmreaper
+```
+
 rpm - list dependencies (not installed)
 ---------------------------------------
 
