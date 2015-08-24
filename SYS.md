@@ -1,3 +1,10 @@
+sys - filesystem hierarchy standard
+-----------------------------------
+
+```
+http://refspecs.linuxfoundation.org/fhs.shtml
+```
+
 sys - change the default /tmp dir (symlink)
 -------------------------------------------
 
