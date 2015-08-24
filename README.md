@@ -11,6 +11,7 @@ command-lines
 * [INITD](INITD.md)
 * [LESS](LESS.md)
 * [MYSQL](MYSQL.md)
+* [MAKEFILE](MAKEFILE.md)
 * [OSX](OSX.md)
 * [POSTGRES](POSTGRES.md)
 * [REGEXP](REGEXP.md)
