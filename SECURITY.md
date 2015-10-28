@@ -1,4 +1,5 @@
 System/Rootkit audit
+-----------------------
 
 ```
 rkhunter -c  --report-warnings-only
