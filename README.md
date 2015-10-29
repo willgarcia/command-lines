@@ -14,6 +14,7 @@ command-lines
 * [MAKEFILE](MAKEFILE.md)
 * [OSX](OSX.md)
 * [POSTGRES](POSTGRES.md)
+* [PROXY](PROXY.md)
 * [REGEXP](REGEXP.md)
 * [RPM](RPM.md)
 * [RSYNC](RSYNC.md)
