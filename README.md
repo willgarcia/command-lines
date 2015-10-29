@@ -5,6 +5,7 @@ command-lines
 -------------
 
 * [BASH](BASH.md)
+* [DISK](DISK.md)
 * [DOCKER/FIG](DOCKER-FIG.md)
 * [FIND](FIND.md)
 * [GIT](GIT.md)
