@@ -9,6 +9,7 @@ command-lines
 * [DOCKER/FIG](DOCKER-FIG.md)
 * [FIND](FIND.md)
 * [GIT](GIT.md)
+* [GPG](GPG.md)
 * [INITD](INITD.md)
 * [LESS](LESS.md)
 * [MYSQL](MYSQL.md)
