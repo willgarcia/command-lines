@@ -111,3 +111,17 @@ FROM (
 GROUP BY schema_name
 ORDER BY schema_name
 ```
+
+postgres - identify locks
+-----------------
+
+```
+select * from pg_stat_activity where state in ('active','idle in transaction');
+```
+
+postgres - kill a query
+------------------
+
+```
+SELECT pg_cancel_backend(query-pid);
+```
