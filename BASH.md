@@ -87,3 +87,9 @@ bash - debug mode
 set -x 
 set -o xtrace 
 ```
+
+bash - readonly variable
+
+```
+readonly var="ro"
+```
