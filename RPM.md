@@ -47,3 +47,20 @@ rpm - show scripts
 ```shell
 rpm -ql --scripts my.rpm
 ````
+
+rpm - database cleanup
+----------------------
+
+```
+yum clean all && rpm --rebuilddb
+package-cleanup --problems
+```
+
+rpm - force delete
+------------------
+
+```
+yum --setopt=tsflags=noscripts remove my-package
+rpm -e --noscripts my-package
+```
+
