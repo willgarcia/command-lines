@@ -11,7 +11,7 @@ mkdir /salt/reactor/services/ -p
 
 # conf
 
-service salt-master restart
+salt-master -l debug # or service salt-master restart 
 service salt-api start
 ```
 
