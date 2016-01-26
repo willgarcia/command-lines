@@ -9,7 +9,7 @@ mkdir -p /etc/ssl/private/
 mkdir -p /etc/salt/master.d/
 mkdir /salt/reactor/services/ -p
 
-# conf
+# minimal conf to setup here: see https://github.com/willgarcia/salt-api-test
 
 salt-master -l debug # or service salt-master restart 
 service salt-api start
