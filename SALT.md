@@ -13,6 +13,7 @@ mkdir /salt/reactor/services/ -p
 
 service salt-master restart
 service salt-api start
+```
 
 salt - versions-report
 ----------------------
