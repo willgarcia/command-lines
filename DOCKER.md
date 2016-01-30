@@ -1,6 +1,20 @@
 See [Docker official documentation](https://docs.docker.com/) for details.
 See [Fig official documentation](http://www.fig.sh/) for details.
 
+docker - remove unused images
+-----------------------------
+
+```
+docker rmi -f $(docker images --filter "dangling=true" -q --no-trunc)
+```
+
+docker - remove all containers
+------------------------------
+
+```
+docker rm -f $(docker ps -a -q)
+```
+
 docker - list images
 --------------------
 
