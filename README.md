@@ -6,7 +6,7 @@ command-lines
 
 * [BASH](BASH.md)
 * [DISK](DISK.md)
-* [DOCKER/FIG](DOCKER-FIG.md)
+* [DOCKER](DOCKER.md)
 * [FIND](FIND.md)
 * [GIT](GIT.md)
 * [GPG](GPG.md)
